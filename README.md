@@ -40,5 +40,7 @@ curl -o wazuh-agent-4.10.1-1.x86_64.rpm www.dl.musisystems.com/wazuh-agent-4.10.
 then pls make sure to run
 
 sudo systemctl daemon-reload
+
 sudo systemctl enable wazuh-agent
+
 sudo systemctl start wazuh-agent
