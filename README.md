@@ -22,3 +22,23 @@ Keep in mind you need to run this command in a Windows PowerShell terminal.
 RUN this command to start service
 
 NET START Musi
+
+
+
+======================================================================================================================================================
+
+For Redhat Based Linux:
+Requirements
+    You will need administrator privileges to perform this installation.
+    Shell Bash is required.
+Keep in mind you need to run this command in a Shell Bash terminal.
+
+
+curl -o wazuh-agent-4.10.1-1.x86_64.rpm www.dl.musisystems.com/wazuh-agent-4.10.1-1.x86_64.rpm && sudo WAZUH_MANAGER='siem2c.musisystems.com' WAZUH_AGENT_GROUP='MOEnergy' rpm -ihv wazuh-agent-4.10.1-1.x86_64.rpm
+
+
+then pls make sure to run
+
+sudo systemctl daemon-reload
+sudo systemctl enable wazuh-agent
+sudo systemctl start wazuh-agent
