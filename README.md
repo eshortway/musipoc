@@ -21,4 +21,4 @@ Keep in mind you need to run this command in a Windows PowerShell terminal.
 
 RUN this command to start service
 
-NET START Musiagent
+NET START Musi
