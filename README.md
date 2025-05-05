@@ -17,9 +17,15 @@ NET START Musi
 
 FOR RZQ MACs
 curl -so wazuh-agent.pkg https://packages.wazuh.com/4.x/macos/wazuh-agent-4.11.2-1.intel64.pkg && echo "WAZUH_MANAGER='siem2c.musisystems.com' && WAZUH_AGENT_GROUP='RZQHQ'" > /tmp/wazuh_envs && sudo installer -pkg ./wazuh-agent.pkg -target /
+
+
 sudo /Library/Ossec/bin/wazuh-control start
 
 
+
+curl -so wazuh-agent.pkg https://packages.wazuh.com/4.x/macos/wazuh-agent-4.11.2-1.arm64.pkg && echo "WAZUH_MANAGER='siem2c.musisystems.com' && WAZUH_AGENT_GROUP='RZQHQ'" > /tmp/wazuh_envs && sudo installer -pkg ./wazuh-agent.pkg -target /
+
+sudo /Library/Ossec/bin/wazuh-control start
 
 
 
