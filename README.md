@@ -66,7 +66,10 @@ sudo systemctl enable wazuh-agent
 sudo systemctl start wazuh-agent
 
 
+FOR MUSIEXT:
+Invoke-WebRequest -Uri http://www.dl.musisystems.com/musi-agent-1.4.82-1.msi -OutFile $env:tmp\musi-agent; msiexec.exe /i $env:tmp\musi-agent /q WAZUH_MANAGER='siem2c.musisystems.com' WAZUH_AGENT_GROUP='MUSIExt'
 
+NET START Musi
 
 
 
