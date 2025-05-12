@@ -5,3 +5,9 @@ Invoke-WebRequest -Uri http://www.dl.musisystems.com/musi-agent-1.4.82-1.msi -Ou
 Then run: 
 
 NET START Musi
+
+Our Cloud SIEM is located here
+
+https://siem2c.musisystems.com:5555/
+
+We will create users as per requested for viewing.
